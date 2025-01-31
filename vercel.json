@@ -1,7 +1,9 @@
 {
-  "build": {
-    "env": {
-      "NODE_OPTIONS": "--max-old-space-size=4096"
+  "version": 2,
+  "functions": {
+    "api/*": {
+      "maxDuration": 10,
+      "memory": 4096
     }
   }
 }
